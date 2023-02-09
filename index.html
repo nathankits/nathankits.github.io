@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POS System</title>
+    <title>Document</title>
 </head>
 <body>
-    <div class="header">
-    <h1>Point of Sale System</h1>
-    </div>
-    <div>
-        <p>
-
-        </p>
-    </div>
+        <div id="buttons">
+            <table>
+                <tr>
+                    <td><button id="clearAll" class="rounded-buttons">Clear</button></td>
+                    <td><button id="paper" class="rounded-buttons">Paper</button></td>
+                    <td><button id="pencils" class="rounded-buttons">Pencils</button></td>
+                    <td><button id="ballpen" class="rounded-buttons">Ballpen</button></td>
+                </tr>
+            </table>
+                <table>
+                    <tr>
+                      <td><button id="yellowPad" class="rounded-button">Yellow Pad</button></td>
+                      <td><button id="wholePad" class="rounded-button">1 Whole Pad</button></td>
+                      <td><button id="halfPad" class="rounded-button">1/2 Pad</button></td>
+                      <td><button id="quarterPad" class="rounded-button">1/4 Pad</button></td>
+                      <td><button id="elemPad_1" class="rounded-button">Grade 1 Pad</button></td>
+                    </tr>
+            </table>
+        </div>
+        <label>Items: </label>
+        <label id="summary"></label>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
