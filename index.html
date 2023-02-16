@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="css.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>POS System</title>
 </head>
 <body>
+    <h3>POINT OF SALE SCHOOL APPLIANCES</h3>
+    <div id="main">
         <div id="buttons">
-            <table>
+            <table id="class1">
                 <tr>
                     <td><button id="clearAll" class="rounded-buttons">Clear</button></td>
                     <td><button id="paper" class="rounded-buttons">Paper</button></td>
                     <td><button id="pencils" class="rounded-buttons">Pencils</button></td>
                     <td><button id="ballpen" class="rounded-buttons">Ballpen</button></td>
+                    <td><button id="checkout" class="rounded-buttons">Check-out</button></td>
+                    <td>Index:<input type="number" id="index_txb"></td>
+                    <td><button id="decrement" class="rounded-buttons">Decrement</button></td>
                 </tr>
             </table>
-            <table>
+            <table id="class2">
                     <tr>
                       <td><button id="yellowPad" data-cost="10" class="rounded-button">Yellow Pad</button></td>
                       <td><button id="wholePad" data-cost="23" class="rounded-button">1 Whole Pad</button></td>
@@ -27,8 +32,18 @@
                     </tr>
             </table>
         </div>
-        <label>Items: </label>
+        </div>
+        <div id="item">
+        <label id="items">Items: </label>
         <label id="summary"></label>
-    <script type="text/javascript" src="script.js"></script>
+        </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.20.0/firebase.js"></script>
+
+    <script type="text/javascript" src="js.js"></script>
 </body>
 </html>

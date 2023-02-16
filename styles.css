@@ -1,36 +1,66 @@
 .rounded-button {
-    border-radius: 10px;
-    width: 80px;
-    height: 80px;
-    border: none;
-    background-color: #3b5998;
-    color: #fff;
-  }
+  border-radius: 10px;
+  width: 100px;
+  height: 75px;
+  border: none;
+  background-color: #3b5998;
+  color: #fff;
+}
 
-  .rounded-buttons {
-    border-radius: 10px;
-    width: 80px;
-    height: 80px;
-    border: none;
-    background-color: #3b5998;
-    color: #fff;
-  }
+.rounded-buttons {
+  border-radius: 10px;
+  width: 100px;
+  height: 75px;
+  border: none;
+  background-color: #3b5998;
+  color: #fff;
+}
 
-  #order-summary {
-    width: 500px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f2f2f2;
-  }
-  
-  .label {
-    font-weight: bold;
-    width: 120px;
-  }
-  
-  .value {
-    text-align: center;
-  }
+#order-summary {
+  width: 100px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
 
-  
-  
+.label {
+  font-weight: bold;
+  width: 120px;
+}
+
+.value {
+  text-align: center;
+}
+
+#main {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  position: fixed;
+  border: solid;
+  background-color: lightgray;
+}
+
+#item {
+  position: fixed;
+  border: 2px solid;
+  border-style: solid;
+  background-color: lightgray;
+  padding-right: 200px;
+  padding-bottom: 100%;
+}
+
+body {
+  background-color: darkgray;
+}
+
+#index_txb {
+  width: 50px;
+}
+
+h3 {
+  position: fixed;
+  left:35%;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
